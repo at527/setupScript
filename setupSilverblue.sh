@@ -2,11 +2,11 @@
 
 echo "Upgrading Packages"
 # Update Packages
-rpm-ostree upgrade -y
+rpm-ostree upgrade
 
 echo "Installing Gnome Tweaks"
 # Add gnome-tweaks
-rpm-ostree install gnome-tweaks -y
+rpm-ostree install gnome-tweaks
 
 # echo "Enabling RPMFusion"
 # Add RPMFusion
@@ -30,6 +30,6 @@ flatpak install -y flathub us.zoom.Zoom com.slack.Slack com.discordapp.Discord o
 echo "Downloading and installing Chrome"
 # Chrome
 wget -P ~/Downloads https://dl.google.com/linux/direct/google-chrome-stable_current_x86_64.rpm
-rpm-ostree install -y ~/Downloads/google-chrome-stable_current_x86_64.rpm
+rpm-ostree install ~/Downloads/google-chrome-stable_current_x86_64.rpm
 
 echo "Setup Complete. Please Reboot."
