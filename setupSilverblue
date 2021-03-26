@@ -18,3 +18,8 @@ flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flat
 # Zoom, Slack, Discord
 flatpak install flathub us.zoom.Zoom com.slack.Slack com.discordapp.Discord
 
+# Chrome
+wget -P ~/Downloads https://dl.google.com/linux/direct/google-chrome-stable_current_x86_64.rpm
+rpm-ostree install ~/Downloads/google-chrome-stable_current_x86_64.rpm
+
+echo Setup Complete. Please Reboot.
