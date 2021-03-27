@@ -1,3 +1,6 @@
 # setupScript
 
-Setup scripts for Fedora Workstation and Fedora Silverblue
+## Setup scripts
+- Fedora Workstation 
+- Fedora Silverblue
+- Debian XFCE from Standard Minimal
