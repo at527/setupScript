@@ -1,7 +1,7 @@
 #!/bin/bash
 
 echo "Installing Desktop Environment"
-apt install xfce4
+apt install --install-suggests xfce4
 
 echo "Installing Sudo"
 apt install -y sudo
