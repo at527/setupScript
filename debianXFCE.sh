@@ -1,5 +1,9 @@
 #!/bin/bash
 
+echo "Installing Desktop Environment"
+apt install xfce4
+
+echo "Installing Sudo"
 apt install -y sudo
 
 # Visual Customizations
@@ -31,9 +35,6 @@ apt install -y ~/Downloads/google-chrome-stable_current_x86_64.deb
 
 ehco "Install Synaptic"
 apt install -y synaptic
-
-
-
 
 
 apt update
