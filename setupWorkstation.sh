@@ -14,7 +14,7 @@ flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flat
 echo "Installing Zoom, Slack, Firefox"
 # Install Apps
 # Zoom, Slack, VLC
-flatpak install flathub us.zoom.Zoom com.slack.Slack org.mozilla.firefox org.videolan.VLC
+flatpak install -y flathub us.zoom.Zoom com.slack.Slack org.mozilla.firefox org.videolan.VLC
 
 echo "Downloading and installing Chrome"
 # Chrome
