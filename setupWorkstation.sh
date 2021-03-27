@@ -1,12 +1,11 @@
 #!/bin/bash
 
+echo "Disable Suspend"
+sudo systemctl mask sleep.target suspend.target hibernate.target hybrid-sleep.target
 
 echo "Installing Gnome Tweaks"
 # Add gnome-tweaks
 sudo dnf install gnome-tweaks -y
-
-echo "Disable Suspend"
-sudo systemctl mask sleep.target suspend.target hibernate.target hybrid-sleep.target
 
 echo "Adding Flathub"
 # Add Flathub
@@ -35,5 +34,3 @@ echo "Installing Media Codecs"
 sudo dnf groupupdate core -y
 sudo dnf groupupdate -y multimedia --setop="install_weak_deps=False" --exclude=PackageKit-gstreamer-plugin
 sudo dnf groupupdate -y sound-and-video
-
-
