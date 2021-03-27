@@ -19,7 +19,7 @@ apt install -y sudo
 #wget -qO- https://git.io/papirus-icon-theme-install | sh
 
 echo "Installing Flatpak and Flathub"
-apt install flatpak
+apt install -y flatpak
 flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
 
 reboot
