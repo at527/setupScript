@@ -3,6 +3,10 @@
 echo "Disable Suspend"
 systemctl mask sleep.target suspend.target hibernate.target hybrid-sleep.target
 
+# Enable EarlyOOM
+# Increase Zram Fraction
+
+
 echo "Installing Gnome Tweaks"
 # Add gnome-tweaks
 dnf install gnome-tweaks -y
