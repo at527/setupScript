@@ -10,6 +10,11 @@ dnf install earlyoom
 systemctl enable --now earlyoom
 ###
 
+### Replace Login Screen
+dnf remove xscreensaver-*
+dnf install xfce4-screensaver
+###
+
 ### Increase Zram Fraction for devices with low ram
 mv /etc/systemd/zram-generator.conf /etc/systemd/zram-generator.conf.bk
 printf "[zram0]\nzram-fraction=1\nmax-zram-size=4096\n" >> /etc/systemd/zram-generator.conf
