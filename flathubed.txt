@@ -1,0 +1,21 @@
+sudo dnf remove \
+gnome-clocks \
+gnome-maps \
+gedit \
+gnome-weather \
+gnome-photos \
+gnome-calendar \
+gnome-contacts \
+libreoffice \
+gnome-boxes \
+cheese \
+rhythmbox \
+totem \
+gnome-calculator \
+gnome-characters \
+baobab \
+evince \
+gnome-font-viewer \
+eog \
+gnome-logs \
+
